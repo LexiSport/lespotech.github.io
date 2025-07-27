@@ -1,2 +1,2 @@
 # lespotech.github.io
-Lexi – AI Legal Assistant for Sports
+Lexi – AI Legal Assistant
