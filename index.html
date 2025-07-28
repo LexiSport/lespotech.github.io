@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lexi – Your AI Legal Assistant</title>
+  <title>Lexi – Your Legal Sport Assistant</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
   <style>
     body {
@@ -30,7 +30,7 @@
       font-size: 2.5rem;
     }
 
-    p {
+    p.intro {
       font-size: 1.2rem;
       color: #444;
       margin: 20px auto;
@@ -44,6 +44,11 @@
       margin: 40px auto;
       max-width: 500px;
       padding: 30px;
+      text-align: left;
+    }
+
+    .chat-box p {
+      margin: 10px 0;
     }
 
     input[type="text"] {
@@ -83,15 +88,21 @@
     <h1>Lexi – Your Legal Sport Assistant</h1>
   </header>
 
-  <div class="chat-box">
-    <p>I’m here to make legal in sports easier and more accessible.</p>
-    <input type="text" placeholder="Ask me a legal question..." disabled />
-    <br>
-    <button disabled>Coming Soon</button>
+  <p class="intro">I’m here to make legal in sports easier and more accessible. Ask me anything!</p>
+
+  <div class="chat-box" id="chatBox">
+    <!-- Messages will appear here -->
   </div>
+
+  <input type="text" id="userInput" placeholder="Type your legal question..." />
+  <br>
+  <button id="sendBtn">Ask Lexi</button>
 
   <footer>
     © 2025 Lespotech – All rights reserved.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
